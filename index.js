@@ -11,7 +11,7 @@ async function main() {
 main();
 
 function showUserPosts(id) {
-    localStorage.setItem("id100", id)
+    localStorage.setItem("id", id)
 window.location.href =`${window.location.origin}/user.html`
 
 }
@@ -27,9 +27,9 @@ function userHTML(user) {
         <b>Phone:</b> ${user.phone}
       </p>
       <p>
-        <b>Website:</b>{" "}
-        <a href="${user.website}" target="_blank">
-          website.website
+        <b>Website:</b>
+        <a href="https://${user.website}" target="_blank">
+          ${user.website}
         </a>
       </p>
     </div>
